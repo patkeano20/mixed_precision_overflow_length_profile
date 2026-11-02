@@ -1,11 +1,11 @@
-# inferopt_jd064
+# mixed_precision_overflow_length_profile
 
 **统计大模型推理优化工程师·混合精度的溢出与下溢各部分的长度占比并标出异常。**
 
-`inferopt_jd064` —— 按段落统计大模型推理优化工程师·混合精度的溢出与下溢相关的长度分布，标出过长、过短与重复表达的部分
+`mixed_precision_overflow_length_profile` —— 按段落统计大模型推理优化工程师·混合精度的溢出与下溢相关的长度分布，标出过长、过短与重复表达的部分
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`inferopt_jd064.py` 拷走就能用
+- 单文件，`mixed_precision_overflow_length_profile.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install patkeano20-inferopt_jd064
+pip install patkeano20-mixed_precision_overflow_length_profile
 ```
 
 装完直接用命令名调用：
 
 ```bash
-inferopt_jd064 --help
+mixed_precision_overflow_length_profile --help
 ```
 
-也可以不用安装，直接把 `inferopt_jd064.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `mixed_precision_overflow_length_profile.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ inferopt_jd064 --help
 ## 用法
 
 ```bash
-python inferopt_jd064.py --file input.txt
-python inferopt_jd064.py --text "示例内容"
-python inferopt_jd064.py --file input.txt --json
+python mixed_precision_overflow_length_profile.py --file input.txt
+python mixed_precision_overflow_length_profile.py --text "示例内容"
+python mixed_precision_overflow_length_profile.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python inferopt_jd064.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_inferopt_jd064.py
+python test_mixed_precision_overflow_length_profile.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_inferopt_jd064.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/patkeano20/inferopt_jd064>
+- GitHub 仓库：<https://github.com/patkeano20/mixed_precision_overflow_length_profile>
 
 ---
 
@@ -79,7 +79,7 @@ python test_inferopt_jd064.py
 patkeano20 做大模型推理优化工程师·混合精度的溢出与下溢相关的问题，方向对标蚂蚁集团的中级大模型推理优化工程师岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://patkeano20.github.io>
-- 仓库：<https://github.com/patkeano20/inferopt_jd064>
+- 仓库：<https://github.com/patkeano20/mixed_precision_overflow_length_profile>
 
 ## 许可
 

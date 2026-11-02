@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "patkeano20-inferopt_jd064"
+name = "patkeano20-mixed_precision_overflow_length_profile"
 version = "0.1.0"
 description = "按段落统计大模型推理优化工程师·混合精度的溢出与下溢相关的长度分布，标出过长、过短与重复表达的部分"
 readme = "README.md"
@@ -22,11 +22,11 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://patkeano20.github.io"
-Repository = "https://github.com/patkeano20/inferopt_jd064"
-Issues = "https://github.com/patkeano20/inferopt_jd064/issues"
+Repository = "https://github.com/patkeano20/mixed_precision_overflow_length_profile"
+Issues = "https://github.com/patkeano20/mixed_precision_overflow_length_profile/issues"
 
 [project.scripts]
-inferopt_jd064 = "inferopt_jd064:main"
+mixed_precision_overflow_length_profile = "mixed_precision_overflow_length_profile:main"
 
 [tool.setuptools]
-py-modules = ["inferopt_jd064"]
+py-modules = ["mixed_precision_overflow_length_profile"]
